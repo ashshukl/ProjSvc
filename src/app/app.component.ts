@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MystringService } from './mystring.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ProjSvc';
+  
+  showheros = true;
+  clrnm='yellow';
+  constructor(public herosvc: MystringService){
+    
+  }
+
+  
 }
